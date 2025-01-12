@@ -251,7 +251,7 @@ body {
   margin: 24px 0 32px;
 }
 .quote {
-  background: url("/assets/quote-bg.png"), #ffffff;
+  background: url("../assets/quote-bg.png"), #ffffff;
   background-repeat: no-repeat;
   background-position: 24px 16px;
   padding: 48px 24px;
