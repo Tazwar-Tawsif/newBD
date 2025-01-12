@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background: #c6e4d6;
+  --btn-bg: #006a50;
+  --text-color: #0e0e0e;
+  --placeholder-color: rgba(14, 14, 14, 0.3);
+  --p-color: rgba(14, 14, 14, 0.7);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Fira Sans", serif;
+  background-color: #f5f5f5;
+}
+.blue-less {
+  background: rgba(84, 144, 245, 0.2);
+}
+.blue {
+  background: rgb(84, 144, 245);
+}
+.green-less {
+  background: var(--background);
+}
+.green {
+  background: #09a15c;
+  margin-top: 25px;
+}
+.yellow-less {
+  background: #f7ebcf;
+}
+.yellow {
+  background: #ffc239;
+}
+/* Shared Elements */
+.p-text {
+  font-size: 16px;
+}
+.btn-text {
+  font-size: 18px;
+}
+.card-title {
+  font-size: 20px;
+}
+.hero-sub {
+  font-size: 24px;
+}
+.article-text {
+  font-size: 32px;
+}
+.section-title {
+  font-size: 40px;
+}
+.hero-title {
+  font-size: 56px;
+}
+
+/* navbar */
+.navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 160px;
+}
+.navbar h3 {
+  color: rgb(14, 14, 14);
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.navbar button {
+  color: var(--btn-bg);
+  box-sizing: border-box;
+  border: 1px solid var(--btn-bg);
+  border-radius: 8px;
+  padding: 15px 30px;
+  font-family: Fira Sans;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* banner */
+.banner {
+  max-width: 1280px;
+  margin: 20px auto 80px;
+  padding: 80px 0px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  border: none;
+}
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 94px;
+  width: 620px;
+}
+
+.banner-text p {
+  color: rgba(14, 14, 14, 0.5);
+  font-family: Fira Sans;
+  margin: 16px 0px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.banner-text h2 {
+  color: var(--text-color);
+  font-family: Fira Sans;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 17px 34px;
+  background: var(--btn-bg);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(255, 255, 255);
+  color: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+}
+
+/* card */
+#pillars,
+.vision,
+.opinion,
+.news,
+.donation {
+  max-width: 1280px;
+  margin: 0 auto 80px;
+}
+
+#pillars h2,
+.vision h2,
+.opinion h2,
+.news h2 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 32px 0px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.card-info h4 {
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.card-info p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* vision */
+.card-2 {
+  width: 411px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 32px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.card2btn {
+  padding: 11px 20px;
+  border-radius: 8px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card2btn:hover {
+  background: white;
+  color: var(--text-color);
+  border: 1px solid var(--btn-bg);
+}
+.vision .title p,
+.news .title p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 24px 0 32px;
+}
+.quote {
+  background: url("/assets/quote-bg.png"), #ffffff;
+  background-repeat: no-repeat;
+  background-position: 24px 16px;
+  padding: 48px 24px;
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+}
+.quote .name {
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+.quote p:nth-child(odd) {
+  color: rgba(14, 14, 14, 0.6);
+}
+
+/* opinion */
+.qna {
+  padding: 32px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.opinion-flex {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.opinion-select {
+  box-sizing: border-box;
+  border: 1px solid rgb(14, 14, 14);
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: rgb(198, 228, 214);
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.news-article {
+  padding: 48px;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.news-article > img {
+  border-radius: 24px;
+}
+.news-article > section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.news-article > section p {
+  margin-bottom: 20px;
+}
+.news-article > section > img {
+  width: 135px;
+}
+.news-article .p-span {
+  display: flex;
+  gap: 12px;
+}
+
+.donation {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.donation h2 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.donation p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.donate {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.card-donation {
+  box-sizing: border-box;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+  border-radius: 16px;
+  padding: 40px;
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card-donation:hover {
+  background-color: var(--background);
+}
+.donation > input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  color: rgba(14, 14, 14, 0.3);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.letter {
+  padding: 80px 0px;
+  background-color: var(--background);
+  border-radius: 24px;
+  background: rgb(198, 228, 214);
+}
+.letter > p {
+  width: 620px;
+}
+.letter-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.letter-div > input[type="text"] {
+  width: 80%;
+  padding: 18px 80px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  color: rgba(14, 14, 14, 0.3);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.foot {
+  background-color: white;
+  padding: 50px 160px;
+  text-align: center;
+}
+.foot h2 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0%;
+  margin: 50px 0 32px;
+}
+
+.foot hr {
+  border: 1px solid rgba(14, 14, 14, 0.1);
+}
+.foot .icon {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  margin: 32px 0 50px;
+}
